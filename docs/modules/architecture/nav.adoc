@@ -1,0 +1,16 @@
+* jME Architectural Documentation
+** xref:preface.adoc[Preface]
+** **Part.01. Abstract: The Architectural Framework and Methodologies**
+*** xref:section1-1.adoc[Section 1.1: What is the SES/MB framework?]
+*** xref:section1-2.adoc[Section 1.2: What is the Automata Theory and its models?]
+*** xref:section1-3.adoc[Section 1.3: Linking the Automata Theory with the SES/MB in all-in-one model.]
+*** xref:section1-4.adoc[Section 1.4: Formalization using First-Order-Logic (FOL).]
+** **Part.02. The jME Architectural Framework**
+*** xref:section2-1.adoc[Section 2.1: Setup tools to be used for the excavation process.]
+*** xref:section2-2.adoc[Section 2.2: Building the SES Skeleton from the codebase.]
+*** xref:section2-3.adoc[Section 2.3: Building the MB Skeleton from GraphViz dependencies graphs.]
+*** xref:section2-4.adoc[Section 2.4: Formal linkage of SES and MB Skeletons leading to the conceptual model.]
+*** xref:section2-5.adoc[Section 2.5: Extracting the Automata machines from GraphViz caller graphs.]
+*** xref:section2-6.adoc[Section 2.6: Formal linkage of SES/MB with the Automata Machines leading to the concrete model.]
+** **Appendices**
+*** xref:appendix-a.adoc[References]

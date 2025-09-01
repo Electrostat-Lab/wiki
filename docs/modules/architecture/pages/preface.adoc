@@ -1,0 +1,13 @@
+= Preface
+
+This is a jMonkeyEngine community open-source project, the end-goal of this project is to nourish the jME wiki with the appropriate architectural documentation for jMonkeyEngine.
+
+Comprehensively, methodologies entail using System-Entity-Structure/Model-Base (SES/MB) framework and the Automata Theory to build a conceptual architecture describing the overall system design and a concrete architecture describing the underlying link between subsystems components and the algorithms through first, decomposing the Engine modules into Engine Subsystems; second to that, formulating a system-entity structure hierarchial skeleton starting from the extracted engine subsystems, and going in depth for each subsystem until reaching the subsystem components and interfaces; continuing this approach in breadth fashion throughout the selected jME module; third to that is extracting dependencies graph for that subsystem; eventually, re-iterating in this cycle until finishing all Engine modules.
+
+Tools are very essential to complete the aforementioned tasks; therefore the following is the most required:
+
+    Git VCS: utilized to pull the codebase of jMonkeyEngine.
+    Doxygen: utilized to traverse over the codebase modules, and together with the help of LaTeX and GraphViz/Dot, generates depe
+    GraphViz/Dot.
+    LATEX.
+    AsciiDoc (for deployment and integration with jME Wiki).
