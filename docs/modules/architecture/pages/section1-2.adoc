@@ -1,0 +1,30 @@
+= Section 1.2: What is the SES/MB framework?
+Created by Pavly G.
+
+The **System Entity Structure/Model Base framework** is a structured simple hierarchial framework that could help engineers to model software as solutions to problems. 
+
+The SES/MB has the capability to model both the problems, and the solutions to those problems into structural sets of entities and components.
+
+== Mapping between the problems domain and the solutions domain
+Mapping between the problems domain and the solutions domain could be attained using the link:https://en.wikipedia.org/wiki/Function_(mathematics)[Functions].
+
+== Phases of SES/MB
+The SES/MB is a two phaseform designing principle; it is broken down into an SES phase, and a model base phase.
+
+**(1) SES Phase:** in which building the subsystems and entities is attained directly from the jME modules; the end result is to build a skeleton for the model.
+
+**(2) MB Phase:** entails building a model base by grouping components under the entities and the subsystems, and creating relations among those components.
+
+[IMPORTANT]
+Another phase is required to complete the documentation that is the functional phase. 
+This phase models the behavior of the SES/MB Structure. We will use the **Automata Theory**, specifically, the naive **finite-state-automaton** with some adjustments to model the behavior of the components.
+
+
+[TIP]
+Modelling relations between elements, on each level of the SES/MB/Automata Hierarchy, could be attained using mapping functions.
+
+== Examples
+
+The link:https://github.com/Electrostat-Lab/Electrostatic-Drivers[**Electrostatic-Drivers**] software is a WIP software that provides driver support for the link:https://github.com/Electrostat-Lab/Electrostatic-Sandbox[**Electrostatic-Sandbox SDK**]; the architecture utilizes the SES/MB/Automata Model to forge both the overall structure along with some of the detailed behavior together in all-in-one architecture.
+
+Here is a simplified version:

@@ -6,8 +6,8 @@ Comprehensively, methodologies entail using System-Entity-Structure/Model-Base (
 
 Tools are very essential to complete the aforementioned tasks; therefore the following is the most required:
 
-    Git VCS: utilized to pull the codebase of jMonkeyEngine.
-    Doxygen: utilized to traverse over the codebase modules, and together with the help of LaTeX and GraphViz/Dot, generates depe
-    GraphViz/Dot.
-    LATEX.
-    AsciiDoc (for deployment and integration with jME Wiki).
+* Git VCS: utilized to pull the codebase of jMonkeyEngine.
+* Doxygen: utilized to traverse over the codebase modules, and together with the help of LaTeX and GraphViz/Dot, generates dependencies graph for the conceptual architecture and a caller graph for the concrete architecture.
+* GraphViz/Dot.
+* LATEX.
+* AsciiDoc (for deployment and integration with jME Wiki).
