@@ -1,32 +1,55 @@
 = jMonkeyEngine Team
-:revnumber: 2.0
-:revdate: 2020/07/25
+:revnumber: 2.1
+:revdate: 2025/08/11
 :keywords: contact, jmonkeyengine, team
 
-
 == Engine Leader
-
 * link:https://hub.jmonkeyengine.org/u/pspeed/summary[pspeed] - Paul Speed - Joined Jan 9, 2006
 * link:https://hub.jmonkeyengine.org/u/sgold/summary[sGold] - Stephen Gold - Joined Jun 8, 2013
 * link:https://hub.jmonkeyengine.org/u/riccardoblb/summary[Riccardo] - Riccardo Balbo - Joined Feb 17, 2014
 
+== Engine Maintainer
+* link:https://hub.jmonkeyengine.org/u/yarnmcdonuts/summary[yaRnMcDonuts] - Ryan McDonough - Joined Jan 29, 2017
+* link:https://hub.jmonkeyengine.org/u/richtea/summary[richtea] - Richard Tingle - Joined Jun 9, 2012
+* link:https://hub.jmonkeyengine.org/u/codex/summary[codex] - Gary - Joined Jan 10, 2021
+
+== SDK Maintainer
+* link:https://hub.jmonkeyengine.org/u/tonihele/summary[tonihele] - Toni Helenius - Joined Jul 12, 2013
+* link:https://hub.jmonkeyengine.org/u/rickard/summary[rickard] - Rickard Edén - Joined Aug 31, 2009
+
+== Marketing Manager
+* link:https://hub.jmonkeyengine.org/u/yarnmcdonuts/summary[yaRnMcDonuts] - Ryan McDonough - Joined Jan 29, 2017
+
+
+___
+
+___
+
 == Engine Leader [Retired]
+
 * [iwgeric] - Joined Aug 14, 2011
 * [Sploreg] - Brent Owens - Joined Oct 22, 2008
 * [nehon] - Rémy Bouquet - Joined Jun 2, 2010
 * [Momoko_Fan] - Kirill Vainer - Joined Mar 22, 2007
 * link:https://hub.jmonkeyengine.org/u/normen/summary[normen] - Normen Hansen - Joined Oct 16, 2008
 
+== Engine Maintainer [Retired]
+* link:https://hub.jmonkeyengine.org/u/ali_rs/summary[Ali_RS] - Ali - Joined Aug 30, 2015
+* link:https://hub.jmonkeyengine.org/u/adi.barda/summary[adi.barba] - Adi Barda - Joined Jan 23, 2017
 
-== Website
+== SDK Maintainer [Retired]
+* link:https://hub.jmonkeyengine.org/u/normen/summary[normen] - Normen Hansen - Joined Oct 16, 2008
+* link:https://hub.jmonkeyengine.org/u/darkchaos/summary[Darkchaos] - Darkchaos - Joined Dec 16, 2014
+* link:https://hub.jmonkeyengine.org/u/grizeldi/summary[grizeldi] - grizeldi - May 23, 2014
+
+== Website [Retired]
 
 * link:https://hub.jmonkeyengine.org/u/jayfella/summary[jayfella] - James Khan - Joined Sep 15, 2013
 
-== Documentation
+== Documentation [Retired]
 
 * link:https://hub.jmonkeyengine.org/u/mitm/summary[mitm] - Robert Allen - Joined Oct 13, 2016
 * link:https://hub.jmonkeyengine.org/u/ali_rs/summary[Ali_RS] - Ali - Joined Aug 30, 2015
 * link:https://hub.jmonkeyengine.org/u/8keep123/summary[8Keep123] - Davis Rollman - Jan 18, 2013
 
-
-+...+ and a big, everlasting thanks to all our contributors! The list of contributors is too long too keep track of, and frankly subjective. There’s certainly some cool monkeys out there who deserves more recognition, but we've done our best to mark the people you should mentally '`high five`' with a simple "`Contributor`" sticker. They shouldn't be too hard to find on the forum: Along with the developers, they’ll be the ones helping you out.
++...+ and a big, everlasting thanks to link:https://github.com/jMonkeyEngine/jmonkeyengine/graphs/contributors[all our contributors]!
