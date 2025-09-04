@@ -28,6 +28,7 @@ asciidoc:
     # previous and next page navigation, uses nav.adoc
     page-pagination: ''
     idprefix: ''
+    stem: latexmath
     idseparator: '-'
     #add an <orgname> element
     orgname: 'Electrostat-Lab'
