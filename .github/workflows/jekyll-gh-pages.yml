@@ -35,8 +35,8 @@ jobs:
         run: npm install
       - name: Install Antora 3.1.12
         run: npm install -g @antora/cli@3.1.12 @antora/site-generator-default@3.1.12
-      - name: Generate Antora Site
-        run: npx antora --fetch wiki-playbook.yml
+      - name: Debug Antora
+        run: npx -p antora@3.1.12 antora --version && npx -p antora@3.1.12 antora --fetch --stacktrace wiki-playbook.yml
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
