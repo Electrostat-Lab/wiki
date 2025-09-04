@@ -7,7 +7,7 @@ content:
   sources:
   - url: https://github.com/jMonkeyEngine/wiki.git
     branches: [HEAD, v3.4, v3.3, v3.2]
-    start_path: ./
+    start_path: /
   - url: https://github.com/jMonkeyEngine/wiki-ui
     branches: HEAD
     start_path: docs
