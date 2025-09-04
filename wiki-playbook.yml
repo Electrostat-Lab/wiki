@@ -12,9 +12,9 @@ content:
       branches: HEAD
       start_path: docs-wiki
   
-  ui:
-    url: https://github.com/jMonkeyEngine/wiki-ui.git
-    branches: HEAD
+ui:
+  url: https://github.com/jMonkeyEngine/wiki-ui.git
+  branches: HEAD
 
 runtime:
   fetch: true
