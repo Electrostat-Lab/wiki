@@ -29,6 +29,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Install Git
+        run: sudo apt-get install -y git
       - name: Setup Node JS
         run: npm install
       - name: Install Antora 3.1.12
