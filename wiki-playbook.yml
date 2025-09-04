@@ -1,13 +1,13 @@
 site:
   title: jMonkeyEngine Docs
-  url: https://electrostat-lab.github.io/wiki/build/site
+  url: https://electrostat-lab.github.io/wiki
   robots: allow
   start_page: docs::documentation.adoc
 content:
   sources:
   - url: https://github.com/jMonkeyEngine/wiki.git
     branches: [HEAD, v3.4, v3.3, v3.2]
-    start_path: docs
+    start_path: ./
   - url: https://github.com/jMonkeyEngine/wiki-ui
     branches: HEAD
     start_path: docs
@@ -30,7 +30,7 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     #add an <orgname> element
-    orgname: 'jMonkeyEngine'
+    orgname: 'Electrostat-Lab'
     # Site wide setting of javaDoc url. Soft set using '@' allows override at
     # component and page level.
     link-javadoc: 'https://javadoc.jmonkeyengine.org/v3.4.1-stable@'
