@@ -1,5 +1,7 @@
+:stem: latexmath
+
 = Section 1.2: What is the SES/MB framework?
-Created by Pavly G.
+https://github.com/pavly-gerges[Pavly G.] <pepogerges33@gmail.com>
 
 The **System Entity Structure/Model Base framework** is a structured simple hierarchial framework that could help engineers to model software as solutions to problems. 
 
@@ -19,12 +21,19 @@ The SES/MB is a two phaseform designing principle; it is broken down into an SES
 Another phase is required to complete the documentation that is the functional phase. 
 This phase models the behavior of the SES/MB Structure. We will use the **Automata Theory**, specifically, the naive **finite-state-automaton** with some adjustments to model the behavior of the components.
 
-
 [TIP]
 Modelling relations between elements, on each level of the SES/MB/Automata Hierarchy, could be attained using mapping functions.
+
+== Formalization:
+* **SES Phase**: Let, stem:[\Phi] be a set of subsystems defining a larger system `S`; such that, stem:[\Phi = \{\bigcup_{i=0}^{n} \phi: (M:(\phi)\rightarrow C_{\phi})\ \land (\phi = \bigcup_{i=0}^{n} E)\}]; where, stem:[E] is an entity inside a subsystem stem:[\phi], and stem:[M:(\phi)\rightarrow C_{\phi}] is a mapping function that takes an element and maps it to a criteria.
+* **MB Phase combined with the Automata Phase**: Therefore, stem:[E = \{\bigcup_{i=0}^{n} \epsilon: (M:(\epsilon)\rightarrow C_{\epsilon})\ \land (M_{\mu}:(\epsilon)\rightarrow M) \}] which maps a component stem:[\epsilon] to a particular set of machines `M`; this establishes a link with the Automata Theory.
+
+image:general/ses-mb.svg[SES/MB,width="",height=""]
 
 == Examples
 
 The link:https://github.com/Electrostat-Lab/Electrostatic-Drivers[**Electrostatic-Drivers**] software is a WIP software that provides driver support for the link:https://github.com/Electrostat-Lab/Electrostatic-Sandbox[**Electrostatic-Sandbox SDK**]; the architecture utilizes the SES/MB/Automata Model to forge both the overall structure along with some of the detailed behavior together in all-in-one architecture.
 
 Here is a simplified version:
+
+image::https://[Placeholder,250,350]

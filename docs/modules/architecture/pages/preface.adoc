@@ -2,12 +2,18 @@
 
 This is a jMonkeyEngine community open-source project, the end-goal of this project is to nourish the jME wiki with the appropriate architectural documentation for jMonkeyEngine.
 
-Comprehensively, methodologies entail using System-Entity-Structure/Model-Base (SES/MB) framework and the Automata Theory to build a conceptual architecture describing the overall system design and a concrete architecture describing the underlying link between subsystems components and the algorithms through first, decomposing the Engine modules into Engine Subsystems; second to that, formulating a system-entity structure hierarchial skeleton starting from the extracted engine subsystems, and going in depth for each subsystem until reaching the subsystem components and interfaces; continuing this approach in breadth fashion throughout the selected jME module; third to that is extracting dependencies graph for that subsystem; eventually, re-iterating in this cycle until finishing all Engine modules.
+== Methodologies
+Comprehensively, methodologies entail using **System-Entity-Structure/Model-Base (SES/MB) framework** ^<<ses,1>>^ and the **Automata Theory** ^<<auto,2>>^ to build a conceptual architecture describing the overall system design and a concrete architecture describing the underlying link between subsystems components and the algorithms through first, decomposing the Engine modules into Engine Subsystems; second to that, formulating a system-entity structure hierarchial skeleton starting from the extracted engine subsystems, and going in depth for each subsystem until reaching the subsystem components and interfaces; continuing this approach in breadth fashion throughout the selected jME module; third to that is extracting dependencies graph for that subsystem; eventually, re-iterating in this cycle until finishing all Engine modules.
 
+== Tools
 Tools are very essential to complete the aforementioned tasks; therefore the following is the most required:
 
 * Git VCS: utilized to pull the codebase of jMonkeyEngine.
 * Doxygen: utilized to traverse over the codebase modules, and together with the help of LaTeX and GraphViz/Dot, generates dependencies graph for the conceptual architecture and a caller graph for the concrete architecture.
-* GraphViz/Dot.
-* LATEX.
+* GraphViz/Dot: embedded within AsciiDoc; required to generate diagrams and scientific models.
+* LaTeX: embedded within AsciiDoc; together with MathJax is required to render math symbols.
 * AsciiDoc (for deployment and integration with jME Wiki).
+
+== References
+* [[ses]] link:https://dl.acm.org/doi/10.5555/3108244.3108245[System entity structure and model base framework in model based engineering of simulations for technical systems].
+* [[auto]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_7[Guide to Discrete Mathematics, Gerard O’Regan: Chapter 7, The Automata Theory].

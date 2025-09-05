@@ -1,0 +1,74 @@
+digraph SES_MB {
+  rankdir=LR;
+  fontsize=12;
+  labelloc="t";
+  label="Generalized SES/MB / Automata Mapping";
+
+  node [shape=rectangle, style=rounded, fontsize=11];
+
+  /* Top-level System */
+  subgraph cluster_S {
+    label = "System S (Φ)";
+    style=rounded; color=black;
+
+    /* Subsystems cluster (example with three subsystems) */
+    subgraph cluster_phi0 { label="subsystem φ0"; phi0_entity0; phi0_entity1 }
+    subgraph cluster_phi1 { label="subsystem φ1"; phi1_entity0 }
+    subgraph cluster_phi2 { label="subsystem φ2"; phi2_entity0; phi2_entity1; phi2_entity2 }
+  }
+
+  /* Entities and their components */
+  node [shape=folder];
+  phi0_entity0 -> phi0_entity0_comp0 [label="contains"];
+  phi0_entity0_comp0 [label="ε00 (component)"];
+  phi0_entity1 -> phi0_entity1_comp0 [label="contains"];
+  phi0_entity1_comp0 [label="ε01 (component)"];
+
+  phi1_entity0 -> phi1_entity0_comp0 [label="contains"];
+  phi1_entity0_comp0 [label="ε10 (component)"];
+
+  phi2_entity0 -> phi2_entity0_comp0 [label="contains"];
+  phi2_entity0_comp0 [label="ε20 (component)"];
+  phi2_entity1 -> phi2_entity1_comp0 [label="contains"];
+  phi2_entity1_comp0 [label="ε21 (component)"];
+  phi2_entity2 -> phi2_entity2_comp0 [label="contains"];
+  phi2_entity2_comp0 [label="ε22 (component)"];
+
+  /* Model Base grouping */
+  MB [shape=component, label="Model Base (MB)\n(groups components into models)"];
+  phi0_entity0_comp0 -> MB [label="grouped_in (MB)"];
+  phi1_entity0_comp0 -> MB;
+  phi2_entity2_comp0 -> MB;
+
+  /* Mapping functions */
+  M_phi [shape=note, label="M:(φ) → Cφ\n(mapping: subsystem → criteria)"];
+  M_eps [shape=note, label="M:(ε) → Cε\n(mapping: component → criteria)"];
+  M_mu [shape=note, label="Mμ:(ε) → M\n(component → machine set)"];
+
+  /* edges for mapping functions */
+  cluster_phi0 -> M_phi [ltail=cluster_phi0, label="maps_to"];
+  phi2_entity1_comp0 -> M_eps [label="maps_to"];
+  phi2_entity2_comp0 -> M_mu [label="maps_to (automata)"];
+
+  /* Automata / Machines */
+  subgraph cluster_A {
+    label = "Automata / Machines (M)";
+    style=dashed;
+    machine0 [label="M0: Finite State Machine\n(states, transitions)"];
+    machine1 [label="M1: Finite State Machine"];
+  }
+
+  /* Link components -> machines */
+  phi2_entity2_comp0 -> machine0 [label="implements"];
+  phi0_entity1_comp0 -> machine1 [label="implements"];
+
+  /* Legend */
+  legend [shape=plaintext, label=<
+    <table border='0' cellborder='1' cellspacing='0'>
+      <tr><td><b>Rounded box</b></td><td>Structures / clusters</td></tr>
+      <tr><td><b>Folder</b></td><td>Entities</td></tr>
+      <tr><td><b>Component</b></td><td>Model Base grouping</td></tr>
+      <tr><td><b>Note</b></td><td>Mapping functions</td></tr>
+    </table>
+  >];
+}

@@ -1,0 +1,24 @@
+digraph FSA {
+  rankdir=LR;
+  fontsize=12;
+  labelloc="t";
+  label="Finite-State Automaton";
+
+  node [shape=circle, fontsize=11];
+
+  // Start state
+  q0 [label="q0", shape=circle];
+  
+  // Final states
+  qf [label="qf", shape=doublecircle];
+
+  // Invisible starting arrow
+  start [shape=point, style=invis, width=0];
+  start -> q0;
+
+  // Example transitions
+  q0 -> q1 [label="a"];
+  q1 [label="q1"];
+  q1 -> qf [label="b"];
+  q0 -> qf [label="ε"];
+}

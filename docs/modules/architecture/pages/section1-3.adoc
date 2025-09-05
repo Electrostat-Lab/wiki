@@ -1,0 +1,46 @@
+:stem: latexmath
+
+= Section 1.3: What is the Automata Theory and its models?
+
+== Definition 
+The **Computational Automata Theory** is a part of the **Theory of Computation** that studies the abstract machines; abstract machines are mathematical models that could be utilized for modelling the comptational algorithms. At the core level, they comprise automata states, transitional functions, and a set of input alphabets. Some machines add more elements to their automaton definition and introduce memory items (e.g., Push down stacks and Linear buffers).
+
+[NOTE]
+The computational automata theory is used in compiler engineering, machine learning, game development, and embedded systems to build language recognizers, and state management systems. An automaton `A` is said to accept a particular language `L` (i.e., set of alphabets) if and only if; there exists at least one automaton stem:[A' \subseteq A] that has valid state transitions for a subset of the defined alphabets stem:[L' \subseteq L] (i.e., the alphabet for that language).
+
+[TIP]
+This document will redefine the automata theory for systems engineering, and will attempt to forge it with the SES/MB framework, previously examined in Section-1.2.
+
+== Types of the Automata Models
+
+An Automaton is represented formally using a sequence of **5+ tuple**; a tuple is an element cell in a sequence structure; a sequence is an ordered elementary structure ^<<dm1,1>>^. Of which, main elements are stem:[Q] a set of states; stem:[\Sigma] a set of input alphabets; stem:[\delta] transitional function transiting from a state to another with an input; stem:[q_0] the start or the initial state; stem:[F] a set of final states at which the automata could accept (i.e., finalize).
+
+Here is a brief list of the famous types of the automata models:
+1. **Finite-state Automaton (FSA)**: is an abstract mathematical machine that consists of a finite number of states. It includes a start state stem:[q_0] in which the machine is in initially; a finite set of states Q; an input alphabet ; a state transition function stem:[\delta], and a set of final accepting states F (where stem:[F \subseteq Q]). ^<<dm2,2>>^ 
++
+image:general/fsa.svg[FSA,width="",height=""]
+
+2. **Push-down Automaton (PDA)**: is defined formally as a 7-tuple sequence stem:[(\Sigma, Q, \Gamma, \delta, q_0, Z, F)]. The set stem:[\Sigma] is a finite set which is called the input alphabet; the set Q is a finite set of states; is the set of stack symbols; is the transition function which maps stem:[Q \times \{\Sigma \cup \{\epsilon\}\} \times \Gamma] into finite subsets of stem:[Q \times \Gamma^{*2}]; where stem:[\Gamma^{*2}] represents a double closure that is a subset of the stack stem:[\Gamma]; stem:[q_0] is the initial state; Z is the initial stack top symbol on the stack (i.e. stem:[Z \in \Gamma]), and F is the set of accepting states (i.e. stem:[F \subseteq Q]). ^<<dm3,3>>^
++
+image:general/pda.svg[PDA,width="",height=""]
+
+3. **Turing Machines**: is defined formally as a 7-tuple stem:[M = (Q, \Gamma, b, \Sigma, \delta, q_0, F)]; stem:[Q] is a finite set of states; stem:[\Gamma] is a finite set of the tape alphabet/symbols; stem:[b \in \Gamma] is the blank symbol (This is the only symbol that is allowed to occur infinitely often on the tape during each step of the computation); stem:[\Sigma] is the set of input symbols and is a subset of stem:[\Gamma] (i.e. stem:[\Gamma = \Sigma \cup \{ b \}]); stem:[\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}^*] is the transition function. This is a partial function where stem:[L] is left shift and stem:[R] is right shift; stem:[q_0 \in Q] is the initial state; stem:[F \subseteq Q] is the set of final or accepting states.  ^<<dm4,4>>^
+
+4. **Hybrid Automata**: are **digital real-time systems** embedded in **analog** environments such as a digital embedded control program for an analog plant environment. The controller state moves discretely between the control modes, and within each control mode the plant state evolves continuously according to physical laws. ^<<dm5,5>>^
+
+[NOTE]
+**Partial Functions**: 
+
+== The jME Architectural Documentation and the Automata Theory
+
+This mini-book will attempt to use a blend of the `PDA` and `the Turing Machines` forged into the `SES/MB` structure to link jME system behavior to its subsystems structure. The final architecture should give developers an idea of how and why things exist as they are now, and their functionalities and their interrelations in depth.
+
+== References
+* [[dm1]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_5#Sec2[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 5.2 Sequences and Series]
+* [[dm2]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_7#Sec2[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 7.2 Finite State Machines]
+* [[dm3]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_7#Sec3[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 7.3 Pushdown Automata]
+* [[dm4]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_7#Sec4[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 7.4 Turing Machines]
+* [[dm5]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_7#Sec5[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 7.4 Hybrid Automata]
+* [[dm5]] link:https://link.springer.com/chapter/10.1007/978-3-030-81588-2_2#Sec12[Guide to Discrete Mathematics, Gerard O'Regan, Springer: 2.4 Functions]
+
+
