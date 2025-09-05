@@ -13,7 +13,7 @@ This document will redefine the automata theory for systems engineering, and wil
 
 == Types of the Automata Models
 
-An Automaton is represented formally using a sequence of **5+ tuple**; a tuple is an element cell in a sequence structure; a sequence is an ordered elementary structure ^<<dm1,1>>^. Of which, main elements are stem:[Q] a set of states; stem:[\Sigma] a set of input alphabets; stem:[\delta] transitional function transiting from a state to another with an input; stem:[q_0] the start or the initial state; stem:[F] a set of final states at which the automata could accept (i.e., finalize).
+An Automaton is represented formally using a sequence of **5+ tuple**; a tuple is an element cell in a sequence structure; a sequence is an ordered elementary structure. ^<<dm1,1>>^ Of which, main elements are stem:[Q] a set of states; stem:[\Sigma] a set of input alphabets; stem:[\delta] transitional function transiting from a state to another with an input; stem:[q_0] the start or the initial state; stem:[F] a set of final states at which the automata could accept (i.e., finalize).
 
 Here is a brief list of the famous types of the automata models:
 1. **Finite-state Automaton (FSA)**: is an abstract mathematical machine that consists of a finite number of states. It includes a start state stem:[q_0] in which the machine is in initially; a finite set of states Q; an input alphabet ; a state transition function stem:[\delta], and a set of final accepting states F (where stem:[F \subseteq Q]). ^<<dm2,2>>^ 
@@ -24,12 +24,12 @@ image:general/fsa.svg[FSA,width="",height=""]
 +
 image:general/pda.svg[PDA,width="",height=""]
 
-3. **Turing Machines**: is defined formally as a 7-tuple stem:[M = (Q, \Gamma, b, \Sigma, \delta, q_0, F)]; stem:[Q] is a finite set of states; stem:[\Gamma] is a finite set of the tape alphabet/symbols; stem:[b \in \Gamma] is the blank symbol (This is the only symbol that is allowed to occur infinitely often on the tape during each step of the computation); stem:[\Sigma] is the set of input symbols and is a subset of stem:[\Gamma] (i.e. stem:[\Gamma = \Sigma \cup \{ b \}]); stem:[\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}^*] is the transition function. This is a partial function where stem:[L] is left shift and stem:[R] is right shift; stem:[q_0 \in Q] is the initial state; stem:[F \subseteq Q] is the set of final or accepting states.  ^<<dm4,4>>^
+3. **Turing Machines**: is defined formally as a 7-tuple stem:[M = (Q, \Gamma, b, \Sigma, \delta, q_0, F)]; stem:[Q] is a finite set of states; stem:[\Gamma] is a finite set of the tape alphabet/symbols; stem:[b \in \Gamma] is the blank symbol (This is the only symbol that is allowed to occur infinitely often on the tape during each step of the computation); stem:[\Sigma] is the set of input symbols and is a subset of stem:[\Gamma] (i.e. stem:[\Gamma = \Sigma \cup \{ b \}]); stem:[\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}^*] is the transition function. This is a partial function where stem:[L] is left shift and stem:[R] is right shift; stem:[q_0 \in Q] is the initial state; stem:[F \subseteq Q] is the set of final or accepting states. ^<<dm4,4>>^
 
 4. **Hybrid Automata**: are **digital real-time systems** embedded in **analog** environments such as a digital embedded control program for an analog plant environment. The controller state moves discretely between the control modes, and within each control mode the plant state evolves continuously according to physical laws. ^<<dm5,5>>^
 
 [NOTE]
-**Partial Functions**: 
+**Partial Functions**: A partial function (or partial mapping) may be undefined for some values of the function domain (i.e., for all values in the domain, there exists at least one value in the range that is undefined), and partial functions arise regularly in the computing field. Total functions, on the other hand, are defined for every value in the function domain (i.e., for all values in the domain, there exists only one value in the range), and many functions encountered in mathematics are total. ^<<dm6,6>>^
 
 == The jME Architectural Documentation and the Automata Theory
 
