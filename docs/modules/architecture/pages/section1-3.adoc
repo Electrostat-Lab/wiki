@@ -3,7 +3,7 @@
 = Section 1.3: What is the Automata Theory and its models?
 
 == Definition 
-The **Computational Automata Theory** is a part of the **Theory of Computation** that studies the abstract machines; abstract machines are mathematical models that could be utilized for modelling the comptational algorithms. At the core level, they comprise automata states, transitional functions, and a set of input alphabets. Some machines add more elements to their automaton definition and introduce memory items (e.g., Push down stacks and Linear buffers).
+The **Computational Automata Theory** is a part of the **Theory of Computation** that studies the abstract machines; abstract machines are mathematical models that could be utilized for modelling the computational algorithms. At the core level, they comprise automata states, transitional functions, and a set of input alphabets. Some machines add more elements to their automaton definition and introduce memory items (e.g., Push down stacks and Linear buffers).
 
 [NOTE]
 The computational automata theory is used in compiler engineering, machine learning, game development, and embedded systems to build language recognizers, and state management systems. An automaton `A` is said to accept a particular language `L` (i.e., set of alphabets) if and only if; there exists at least one automaton stem:[A' \subseteq A] that has valid state transitions for a subset of the defined alphabets stem:[L' \subseteq L] (i.e., the alphabet for that language).
@@ -16,6 +16,7 @@ This document will redefine the automata theory for systems engineering, and wil
 An Automaton is represented formally using a sequence of **5+ tuple**; a tuple is an element cell in a sequence structure; a sequence is an ordered elementary structure. ^<<dm1,1>>^ Of which, main elements are stem:[Q] a set of states; stem:[\Sigma] a set of input alphabets; stem:[\delta] transitional function transiting from a state to another with an input; stem:[q_0] the start or the initial state; stem:[F] a set of final states at which the automata could accept (i.e., finalize).
 
 Here is a brief list of the famous types of the automata models:
+
 1. **Finite-state Automaton (FSA)**: is an abstract mathematical machine that consists of a finite number of states. It includes a start state stem:[q_0] in which the machine is in initially; a finite set of states Q; an input alphabet ; a state transition function stem:[\delta], and a set of final accepting states F (where stem:[F \subseteq Q]). ^<<dm2,2>>^ 
 +
 image:general/fsa.svg[FSA,width="",height=""]
