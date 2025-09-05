@@ -1,12 +1,12 @@
 * jME Architectural Documentation
 ** xref:preface.adoc[Preface]
-** Part.01. Abstract: The Architectural Framework and Methodologies
+** Chapter.01. Abstract: The Architectural Framework and Methodologies
 *** xref:section1-1.adoc[Section 1.1: Why building an architectural documentation?]
 *** xref:section1-2.adoc[Section 1.2: What is the SES/MB framework?]
 *** xref:section1-3.adoc[Section 1.3: What is the Automata Theory and its models?]
 *** xref:section1-4.adoc[Section 1.4: General formula for the architectural framework.]
 *** xref:section1-5.adoc[Section 1.5: Formalization using First-Order-Logic (FOL).]
-** Part.02. The jME Architectural Framework
+** Chapter.02. The jME Architectural Framework
 *** xref:section2-1.adoc[Section 2.1: Setup tools to be used for the excavation process.]
 *** xref:section2-2.adoc[Section 2.2: Building the SES Skeleton from the codebase.]
 *** xref:section2-3.adoc[Section 2.3: Building the MB Skeleton from GraphViz dependencies graphs.]
