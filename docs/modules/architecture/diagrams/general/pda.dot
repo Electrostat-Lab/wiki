@@ -1,0 +1,23 @@
+digraph PDA {
+  rankdir=LR;
+  fontsize=12;
+  labelloc="t";
+  label="Push-Down Automaton";
+
+  node [shape=circle, fontsize=11];
+
+  // States
+  q0 [label="q0"];
+  q1 [label="q1"];
+  qf [label="qf", shape=doublecircle];
+
+  // Invisible starting arrow
+  start [shape=point, style=invis, width=0];
+  start -> q0;
+
+  // Example transitions with stack operations
+  q0 -> q1 [label="a, Z → AZ"];   // Read 'a', push 'A' (stack top Z becomes AZ)
+  q1 -> q1 [label="a, A → AA"];   // Read 'a', push another 'A'
+  q1 -> q1 [label="b, A → ε"];    // Read 'b', pop 'A'
+  q1 -> qf [label="ε, Z → Z"];    // ε-move to accept if stack bottom Z is reached
+}

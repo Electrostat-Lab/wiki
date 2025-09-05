@@ -1,0 +1,4 @@
+= Section 1.4: General formula for the architectural framework.
+
+Eventually, we deduce in this section the final formula that will be used along this mini-book to formulate the architectural documentation of the jMonkeyEngine Game Engine.
+

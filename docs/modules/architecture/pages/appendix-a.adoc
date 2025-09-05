@@ -1,0 +1,13 @@
+= Appendix-A: References
+
+This section serves of as the references utilized to build both the **conceptual architecture** and the **concrete architecture** of jME using the SES/MB and the Automata Theory.
+
+== Articles:
+* (Recommended) [[sesmb]] link:https://dl.acm.org/doi/10.5555/3108244.3108245[System entity structure and model base framework in model based engineering of simulations for technical systems]
+* (Recommended) link:https://dl.acm.org/doi/10.1145/302405.302691[Linux as a case study: its extracted software architecture]
+* (Advanced) link:https://link.springer.com/chapter/10.1007/978-3-642-82144-8_4[System Theoretic Foundations of Modelling and Simulation]
+* (Advanced) link:https://link.springer.com/chapter/10.1007/978-3-642-82144-8_5[T3SD Model]
+
+== Books:
+* link:https://link.springer.com/book/10.1007/978-3-030-18869-6[Modelling and Simulation, Springer]
+* link:https://link.springer.com/book/10.1007/978-3-642-82144-8[Simulation and Model-Based Methodologies: An Integrative View]

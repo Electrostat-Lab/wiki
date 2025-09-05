@@ -1,0 +1,8 @@
+= Section 1.1: Why building an architectural documentation?
+
+Building architectural documentation provides a formal linkage between **the problem that the software is trying to solve**, **the high-level architecture of the software subsystems and its components**, and **the concrete detailed and constructional design (i.e., the code)**.
+
+== Understanding the execution flow
+If a cluster of these formal links forms in one's mind, the result would be understanding the execution flow of the jME applications on different platforms, and yet mitigating the misuse, and easing the portability and scalability of software from the start.
+
+In other words, the goal of this mini-book is to link the current codebase to a high-level architecture; therefore increasing our understanding of the Engine Subsystems.
